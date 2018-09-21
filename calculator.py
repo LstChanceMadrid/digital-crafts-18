@@ -1,9 +1,13 @@
 #first_number = float(input("Enter your first number: "))
 #operand = input("Enter an operand (+, - , * , /): ")
-
+print("***---------***---------***---------***")
+print("---***---***---***---***---***---***---")
+print("------***---------***---------***------")
 print("Hello, your calculator is ready!")
 print("You may press 'q' at anytime to quit.")
-
+print("------***---------***---------***------")
+print("---***---***---***---***---***---***---")
+print("***---------***---------***---------***")
 
 def calculate(first_number, operand, second_number):
 
@@ -16,9 +20,9 @@ def calculate(first_number, operand, second_number):
     elif (operand == "/"):
         divide(first_number, second_number)
     else:
-        print("************")
+        print("---***---***---***---***---***---***---")
         print("Invalid operand, try again")
-        print("************")
+        print("---***---***---***---***---***---***---")
         return False
 
             
@@ -26,19 +30,20 @@ def calculate(first_number, operand, second_number):
 
 def add(first_number, second_number):
     result = first_number + second_number
-    print(result)
+    print("Your sum is {0}".format(result))
+
 
 def subtract(first_number, second_number):
     result = first_number - second_number
-    print(result)
+    print("Your difference is {0}".format(result))
 
 def multiply(first_number, second_number):
     result = first_number * second_number
-    print(result)
+    print("Your product is {0}".format(result))
 
 def divide(first_number, second_number):
     result = first_number / second_number
-    print(result)
+    print("Your quotient.remainder is {0}".format(result))
 
 while True:
     try:
@@ -59,9 +64,9 @@ while True:
     except:
 
         if ValueError:
-            print("************")
+            print("---***---***---***---***---***---***---")
             print("Invalid number, try again")
-            print("************")
+            print("---***---***---***---***---***---***---")
 
 
 
