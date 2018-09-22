@@ -32,7 +32,6 @@ def add(first_number, second_number):
     result = first_number + second_number
     print("Your sum is {0}".format(result))
 
-
 def subtract(first_number, second_number):
     result = first_number - second_number
     print("Your difference is {0}".format(result))
@@ -44,6 +43,8 @@ def multiply(first_number, second_number):
 def divide(first_number, second_number):
     result = first_number / second_number
     print("Your quotient.remainder is {0}".format(result))
+
+
 
 while True:
     try:
